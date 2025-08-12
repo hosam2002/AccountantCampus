@@ -177,6 +177,17 @@ body {
   font-size: 5rem;
 }
 
+.header,
+.hamburger {
+  min-height: 12rem;
+}
+@media (max-width: 37.5em) {
+  .header,
+  .hamburger {
+    min-height: 10rem;
+  }
+}
+
 .header {
   position: relative;
   min-height: 12rem;
@@ -186,7 +197,6 @@ body {
 @media (max-width: 37.5em) {
   .header {
     padding: 0 1.5rem;
-    min-height: 10rem;
   }
 }
 
@@ -347,7 +357,6 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  min-height: 12rem;
   z-index: 500;
 }
 .hamburger__checkbox {

@@ -1,6 +1,13 @@
+.header,
+.hamburger {
+
+    min-height: 12rem;
+    @include respond (break-600) { min-height: 10rem; }
+}
+
 .header {
 
-    @include respond (break-600) { padding: 0 1.5rem; min-height: 10rem;}
+    @include respond (break-600) { padding: 0 1.5rem; }
 
     position: relative;
 
@@ -68,8 +75,4 @@
             width: 3.85rem;
         }
     }
-}
-
-.hamburger {
-    
 }
