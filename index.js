@@ -1,5 +1,5 @@
 const navbutton = document.getElementById('nav-btn')
-const navmneu = document.getElementById('nav-menu')
+const navmenu = document.getElementById('nav-menu')
 const navclose = document.getElementById('nav-close')
 
 navbutton.addEventListener('change', () => {
@@ -8,13 +8,19 @@ navbutton.addEventListener('change', () => {
 
     if (status == true) {
 
-        navmneu.style.marginLeft = '0'
+        navmenu.style.marginLeft = '0'
         navclose.style.display = 'block'
 
     } else {
         
-        navmneu.style.marginLeft = '-25rem'
+        navmenu.style.marginLeft = '-25rem'
         navclose.style.display = 'none'
     }
+})
 
+navclose.addEventListener(`click`, () => {
+
+    navclose.style.display = 'none'
+    navmenu.style.marginLeft = `-25rem`
+    navbutton.checked = false 
 })
