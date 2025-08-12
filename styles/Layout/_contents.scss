@@ -1,0 +1,89 @@
+.contents {
+
+    width: 100%;
+    margin: 5rem 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents {
+
+    &__container {
+
+        @include respond (break-570) { padding: 1.5rem; }
+
+        position: relative;
+
+        padding: 3.5rem;
+        text-align: center;
+
+        border-radius: 15px;
+        background-color: rgba($bg-amber-300, .5);
+
+        &::after,
+        &::before {
+
+
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        &::after {
+
+            @include respond (break-600) {}
+
+            top: -1rem;
+            left: 1rem;
+            z-index: -200;
+
+            background-color: rgba($bg-amber-400, .15);
+        }
+
+        &::before {
+
+            @include respond (break-600) {}
+
+            top: 1rem;
+            right: 1rem;
+            z-index: -100;
+
+            background-color: rgba($bg-amber-300, .25);
+        }
+    }
+
+    &__header,
+    &__body { color: $bg-black; }
+
+    &__header {
+        
+        @include respond (break-600) { font-size: 4.5rem; }
+        
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    &__body {
+
+        @include respond (break-1010) { width: 70rem; }
+        @include respond (break-850) { width: 60rem; }
+        @include respond (break-740) { width: 50rem; }
+        @include respond (break-670) { width: 45rem; }
+        @include respond (break-600) { width: 40rem; }
+        @include respond (break-550) { width: 35rem; }
+        @include respond (break-490) { width: 30rem; }
+
+        width: 80rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+
+        text-indent: 1rem;
+        text-align: justify;
+
+        & > span { font-weight: 400; }
+    }
+}

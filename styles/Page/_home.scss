@@ -1,0 +1,24 @@
+.home {
+
+    @include respond (break-600) { padding: 0; min-height: 55rem;} 
+    @include respond (break-550) { min-height: 60rem; }
+
+    width: 100%;
+    min-height: 65rem;
+    padding: 0 2.5rem;
+
+    background-image: 
+    linear-gradient(to bottom, rgba($bg-amber-300, .25), rgba($bg-amber-600, 1)),
+    url(/img/reading-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+
+    @include respond (break-600) { clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
+
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}

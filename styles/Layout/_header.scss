@@ -1,0 +1,71 @@
+.header {
+
+    @include respond (break-600) { padding: 0 1.5rem; min-height: 10rem;}
+
+    position: relative;
+
+    min-height: 12rem;
+    width: 100%;
+
+    background-color: transparent;
+}
+
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__brand {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 10px;
+        background-color: transparent;
+        padding: .85rem 1.5rem .85rem 0;
+    }
+
+    &__name {
+
+        margin: 0 0 0 .5rem;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        background-color: transparent;
+        color: $bg-white;
+
+        & > img {
+            
+            @include respond (break-600) { width: 10rem; }
+            width: 12rem;
+        }
+    }
+
+    &__logo {
+
+        @include respond (break-600) { width: 4.5rem; height: 4.5rem;} 
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            
+        width: 5rem;
+        height: 5rem;
+
+        border-radius: 10px;
+        background-color: $bg-white;
+
+        margin: 0 .5rem 0 0;
+
+        & > img {
+
+            @include respond (break-600) { width: 3rem; }
+            width: 3.85rem;
+        }
+    }
+}

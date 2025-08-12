@@ -1,0 +1,68 @@
+.nav {
+
+    &__checkbox { display: none; }
+
+    &__button {
+
+        @include respond (break-600) { right: 1.5rem; }
+
+        position: absolute;
+        right: 0;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        width: 5rem;
+        height: 5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        cursor: pointer;
+    }
+
+    &__hamburger {
+
+        display: inline-block;
+        position: relative;
+    }
+
+    &__hamburger {
+
+        &::after,
+        &::before {
+
+            content: "";
+            position: absolute;
+            right: 0;
+        }
+
+        &,
+        &::after,
+        &::before {
+
+            width: 75%;
+            height: .45rem;
+            border-radius: 15px;
+            background-color: $bg-white;
+        }
+
+        &::after { top: 10px; }
+        &::before { top: -10px }
+    }
+}
+
+.nav {
+
+    &__checkbox:checked + &__button &__hamburger {
+
+        background-color: transparent;
+
+        &::after,
+        &::before { top: 0; }
+
+        &::after { transform: rotate(135deg); }
+        &::before { transform: rotate(-135deg); }
+    }
+}
