@@ -11,12 +11,78 @@
     </head>
     <body>
 
+        <!-- popup start -->
+        <div class="popup popup__books" id="popup-0">
+
+            <div class="popup__card" id="popup-books">
+                <div class="popup__headline"> Available books </div>
+                <div class="popup__cloud">
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                </div>
+                <button class="popup__button" id="popup-close-0"> Close </button>
+            </div>
+
+        </div>
+
+        <div class="popup popup__sheets" id="popup-1">
+
+            <div class="popup__card" id="popup-sheets">
+                <div class="popup__headline"> Available sheets </div>
+                <div class="popup__cloud">
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                </div>
+                <button class="popup__button" id="popup-close-1"> Close </button>
+            </div>
+            
+        </div>
+
+        <div class="popup popup__exams" id="popup-2">
+
+            <div class="popup__card" id="popup-exams">
+                <div class="popup__headline"> Available exams </div>
+                <div class="popup__cloud">
+                    <div class="popup__row">                        
+                        <div class="popup__icon"></div>
+                        <div class="popup__link"> Governmental accountancy </div>
+                    </div>
+                </div>
+                <button class="popup__button" id="popup-close-2"> Close </button>
+            </div>
+            
+        </div>
+        
+        <!-- popup end -->
+
+        <!-- navbar start -->
+
         <div class="navbar">
 
             <div class="navbar__menu" id="nav-menu"></div>
             <div class="navbar__close" id="nav-close"></div>
 
         </div>
+
+        <!-- navbar end -->
+
+        <!-- hamburger start -->
 
         <div class="hamburger">
 
@@ -28,6 +94,10 @@
             </div>
 
         </div>
+        
+        <!-- hamburger end -->
+
+        <!-- home start -->
 
         <div class="home">
 
@@ -64,15 +134,17 @@
 
         </div>
 
+        <!-- home end -->
+
         <div class="materials">
 
-            <div class="materials__grid">
+            <div class="materials__grid" id="cards">
 
                 <div class="materials__cards">
 
                     <div class="materials__img img1"></div>
                     <div class="materials__headline"> Books </div>
-                    <div class="materials__bottom"> <button class="materials__button">Browse Books</button> </div>
+                    <div class="materials__bottom"> <button class="materials__button" id="btn-books">Browse Books</button> </div>
 
                 </div>
 
@@ -80,7 +152,7 @@
 
                     <div class="materials__img img2"></div>
                     <div class="materials__headline"> Sheets </div>
-                    <div class="materials__bottom"> <button class="materials__button">Browse Sheets</button> </div>
+                    <div class="materials__bottom"> <button class="materials__button" id="btn-sheets">Browse Sheets</button> </div>
 
                 </div>
 
@@ -88,7 +160,7 @@
 
                     <div class="materials__img img3"></div>
                     <div class="materials__headline"> Exams Papers </div>
-                    <div class="materials__bottom"> <button class="materials__button">Browse Exams</button> </div>
+                    <div class="materials__bottom"> <button class="materials__button" id="btn-exams">Browse Exams</button> </div>
 
                 </div>
 
