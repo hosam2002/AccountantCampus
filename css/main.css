@@ -514,7 +514,7 @@ body {
   }
 }
 .popup__books {
-  display: none;
+  display: flex;
 }
 .popup__sheets {
   display: none;
@@ -533,6 +533,7 @@ body {
   border-radius: 10px;
   border: 1px solid #E5E7EB;
   margin-bottom: -400rem;
+  margin-bottom: 0;
   transition: margin 0.4s ease-in-out;
 }
 @media (max-width: 61.25em) {
@@ -578,24 +579,36 @@ body {
 .popup__row {
   width: 100%;
   padding: 0.85rem;
-  border-radius: 5px;
-  background-color: #F0FDF4;
+  border-radius: 0;
+  border-bottom: 1px solid #E5E7EB;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-.popup__row:not(:last-child) {
-  margin: 0 0 0.85rem 0;
 }
 .popup__icon {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 10px;
-  background-color: #FDA4AF;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup__icon > i {
+  line-height: none;
+  font-size: 2.4rem;
+  color: #4ADE80;
 }
 .popup__link {
   margin-left: 1.5rem;
   font-size: 1.6rem;
+  text-decoration: underline;
+  color: #1D4ED8;
+}
+.popup__link > a {
+  text-decoration: none;
+  color: inherit;
 }
 .popup__button {
   padding: 0.85rem 3.5rem;
