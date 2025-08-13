@@ -1,6 +1,9 @@
 .footer {
 
-    @include respond (break-670) { margin: 5rem 0 0 0; min-height: 32rem;}
+    @include respond (break-670) {
+        margin: 5rem 0 0 0;
+        min-height: 32rem;
+    }
 
     padding: 2.5rem;
     min-height: 25rem;
@@ -28,29 +31,68 @@
         align-items: center;
         justify-content: center;
 
-        & > img { width: 4.5rem; }
+        &>img {
+            width: 4.5rem;
+        }
     }
 
-    &__name { 
-        
-        margin: 0 0 0 .85rem; 
+    &__name {
+
+        margin: 0 0 0 .85rem;
         font-size: 2.4rem;
         font-weight: 500;
 
-        & > span { font-weight: 700; }
+        &>span {
+            font-weight: 700;
+        }
     }
 
     &__body {
 
-        @include respond (break-670) { width: 80%; }
-        @include respond (break-600) { width: 100%; text-align: justify; }
+        @include respond (break-670) {
+            width: 80%;
+        }
+
+        @include respond (break-600) {
+            width: 100%;
+            text-align: justify;
+        }
 
         width: 60%;
         margin: 1.5rem 0 0 0;
         font-size: 1.6rem;
         text-indent: 1.5rem;
 
-        & > span { font-weight: 700; }
-        & > span:last-child { color: $bg-red-500; }
+        &>span {
+            font-weight: 700;
+        }
+
+        &>span:last-child {
+            color: $bg-red-500;
+        }
+    }
+
+    &__bottom {
+
+        @include respond (break-600) {
+            font-size: 1.2rem;
+        }
+
+        border-radius: 5px;
+        background-color: $bg-grey-100;
+
+        padding: 1.5rem 0;
+        margin: 2.5rem 0 0 0;
+
+        font-size: 1.4rem;
+        text-align: center;
+
+        &>span {
+            @include respond (break-600) {
+                font-weight: 700;
+            }
+
+            font-weight: 600;
+        }
     }
 }
