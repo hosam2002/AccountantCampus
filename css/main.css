@@ -498,6 +498,15 @@ body {
   color: #EF4444;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+@media (max-width: 37.5em) {
+  .no-margin {
+    margin: 0 !important;
+  }
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -516,7 +525,7 @@ body {
 .popup__books {
   display: none;
 }
-.popup__sheets {
+.popup__summaries {
   display: none;
 }
 .popup__exams {
@@ -567,6 +576,19 @@ body {
   font-weight: 700;
   color: #0F172A;
 }
+.popup__body {
+  width: 65%;
+  margin: 1.5rem 0 0 0;
+  font-size: 1.6rem;
+}
+@media (max-width: 37.5em) {
+  .popup__body {
+    width: 100%;
+  }
+}
+.popup__body > span {
+  font-weight: 800;
+}
 .popup__cloud {
   margin: 2.5rem 0 0 0;
 }
@@ -610,17 +632,12 @@ body {
   color: inherit;
 }
 .popup__button {
-  padding: 0.85rem 3.5rem;
-  height: 5rem;
   border: none;
-  border-radius: 5px;
-  background-color: #EF4444;
   font-size: 1.4rem;
   font-weight: 800;
-  color: #FFFFFF;
   position: absolute;
   right: 2.5rem;
-  bottom: 2.5rem;
+  top: 2.5rem;
   transition: transform 0.4s ease-in-out;
 }
 @media (max-width: 37.5em) {
@@ -634,6 +651,10 @@ body {
 }
 .popup__button:active {
   transform: translateX(0);
+}
+.popup__button > svg {
+  fill: #EF4444;
+  width: 2.5rem;
 }
 
 .home {

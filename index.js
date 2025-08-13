@@ -34,7 +34,7 @@ const popup3 = document.getElementById(`popup-2`) // exams
 // Cards
 
 const popupbooks = document.getElementById(`popup-books`)
-const popupsheets = document.getElementById(`popup-sheets`)
+const popupsheets = document.getElementById(`popup-summaries`)
 const popupexams = document.getElementById(`popup-exams`)
 
 // Buttons
@@ -44,7 +44,7 @@ const popupsheetsclose = document.getElementById(`popup-close-1`)
 const popupexamsclose = document.getElementById(`popup-close-2`)
 
 const popupbooksbutton = document.getElementById(`btn-books`)
-const popupsheetsbutton = document.getElementById(`btn-sheets`)
+const popupsheetsbutton = document.getElementById(`btn-summaries`)
 const popupexamsbutton = document.getElementById(`btn-exams`)
 
 // books
